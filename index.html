@@ -13,13 +13,15 @@
     <!-- Fin fuentes -->
     <script type="text/javascript" src="./contacto.js"></script>
 
-    <title>Profesora de Yoga 🧘🏻‍♀️ Belen Luppino</title>
+    <title>Yoga 🧘🏻‍♀️ Belen Luppino</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="./assets/loto.png" alt="logo1">
+            <a href="index.html">
+                <img src="./assets/loto.png" alt="logo1">
+            </a>
         </div>
         <nav>
             <ul>
@@ -54,7 +56,7 @@
         <div class="divContacto">
             <h2>Contacto</h2>
             <section class="contact-section">
-                <form id="formularioContacto" class="contact-form" onsubmit="return enviarFormulario()">
+                <form id="formularioContacto" class="contact-form" onclick="return enviarFormulario()">
                     <h1>Formulario de Contacto</h1>
                     <label for="email">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" required>        
@@ -68,14 +70,13 @@
                     </select>        
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="4" required></textarea>        
-                    <input type="submit" value="Enviar">
+                    <input type="button" value="Enviar">
                 </form>
             </section>
         </div>
         <img src="./assets/guerrero.png" alt="guerrero">
     </section>
     <footer></footer>
-
 </body>
 
 </html>
